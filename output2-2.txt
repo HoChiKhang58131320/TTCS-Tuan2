@@ -1,0 +1,15 @@
+Ma nhan vien	Ho ten			Tuoi	Luong nhan vien
+1		nguyen van hoang			15	1200
+2		nguyen minh hai			25	3200
+-----------Thong tin nhan vien------------
+STT	Ma nhan vien	Ho ten				Tuoi	Luong nhan vien
+1	1		nguyen van hoang				15		1200
+
+Ma nhan vien	Ho ten			Tuoi	Luong nhan vien
+1		tran van cuong			15	1200
+2		nguyen minh hai			25	3200
+Xoa thanh cong!
+Xoa that bai!
+Ma nhan vien	Ho ten			Tuoi	Luong nhan vien
+1		tran van cuong			15	1200
+0					8519811	33
