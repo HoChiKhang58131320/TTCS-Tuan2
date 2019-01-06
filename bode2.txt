@@ -1,0 +1,19 @@
+3
+1. De phan giai dia chi IPv6 thanh dia chi MAC, can su dung giao thuc nao sau day:
+a. ARP
+b. DHCP
+c. RARP
+d. ICMP
+a
+2. Trong so cac cap giao thuc va cong dich vu sau, cap nao la dung:
+a. SMTP: TCP Port 21
+b. Telnet: UDP Port 23
+c. HTTP: TCP Port 80
+d. TFTP: TCP Port 69
+c
+3. Hub la thiet bi hoat dong o tang may trong mo hinh OSI:
+a. Tang Vat Ly
+b. Tang Data Link
+c. Tang Transport
+d. Tang Network
+a
