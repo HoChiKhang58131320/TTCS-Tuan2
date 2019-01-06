@@ -1,0 +1,19 @@
+3
+1. Dich vu mang DNS dung de
+a. Cap dia chi cho cac may tram.
+b. Phan giai ten va dia chi.
+c. Truyen file va du lieu.
+d. Gui thu dien tu.
+b
+2. Trong cac mo hinh sau, mo hinh nao duoc dung pho bien hien nay:
+a. Peer - to - Peerb. 
+b. Remote Accessc. 
+c. Terminal - Mainframed. 
+d. Client - Server
+d
+3. Ðia chi IPv6 gom bao nhieu bit?
+a. 32
+b. 48
+c. 64
+d. 128
+d
