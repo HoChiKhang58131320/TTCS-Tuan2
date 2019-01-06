@@ -1,0 +1,19 @@
+3
+1. Switch la thiet bi hoat dong o tang may trong mo hinh OSI:
+a. Lop 1
+b. Lop 2
+c. Lop 3
+d. Lop 4
+b
+2. Cac don vi du lieu trong mo hinh OSI:
+a. PDU
+b. Packet
+c. CSU
+d. Frame
+a
+3. Thiet bi mang nao dung de noi cac mang va kiem soat broadcast?
+a. Hub
+b. Bridge
+c. Ethernet switch
+d. Router
+d
