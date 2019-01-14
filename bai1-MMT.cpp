@@ -3,40 +3,36 @@ using namespace std;
 
 int n, player; //bien n de lua chon menu, player de xac dinh nguoi choi 1 hay 2
 int dem=0; //dem so luot choi
-char a[3][3] = {
-	{' ',' ',' '}, 
-	{' ',' ',' '}, 
-	{' ',' ',' '}  
-}; 
+char a[10] = {'o','1','2','3','4','5','6','7','8','9'}; //mang a luu cac gia tri so tren ban co
 
 int kiemtra() //dieu kien ket thuc game:3 o lien tiep theo chieu ngang, doc, cheo
 {
-	if(a[0][0] == a[0][1] && a[0][1] == a[0][2] && a[0][0]!=' ')  	   //hang ngang
+	if (a[1] == a[2] && a[2] == a[3])  	   //hang ngang
 
 		return 1;
-	else if (a[1][0] == a[1][1] && a[1][1] == a[1][2] && a[1][0]!=' ')
+	else if (a[4] == a[5] && a[5] == a[6])
 
 		return 1;
-	else if (a[2][0] == a[2][1] && a[2][1] == a[2][2] && a[2][0]!=' ')
+	else if (a[7] == a[8] && a[8] == a[9])
 
 		return 1;
-	else if (a[0][0] == a[1][0] && a[1][0] == a[2][0] && a[0][0]!=' ') //hang doc
+	else if (a[1] == a[4] && a[4] == a[7]) //hang doc
 
 		return 1;
-	else if (a[0][1] == a[1][1] && a[1][1] == a[2][1] && a[0][1]!=' ')
+	else if (a[2] == a[5] && a[5] == a[8])
 
 		return 1;
-	else if (a[0][2] == a[1][2] && a[1][2] == a[2][2] && a[0][2]!=' ')
+	else if (a[3] == a[6] && a[6] == a[9])
 
 		return 1;
-	else if (a[0][0] == a[1][1] && a[1][1] == a[2][2] && a[0][0]!=' ') //hang cheo
+	else if (a[1] == a[5] && a[5] == a[9]) //hang cheo
 
 		return 1;
-	else if (a[0][2] == a[1][1] && a[1][1] == a[2][0] && a[0][2]!=' ')
+	else if (a[3] == a[5] && a[5] == a[7])
 
 		return 1;
-	else if (a[0][0] != ' ' && a[0][1] != ' ' && a[0][2] != ' ' && a[1][0] != ' ' && a[1][1] != ' ' && a[1][2] != ' ' 
-				&& a[2][0] != ' ' && a[2][1] != ' ' && a[2][2] != ' ')
+	else if (a[1] != '1' && a[2] != '2' && a[3] != '3' && a[4] != '4' && a[5] != '5' && a[6] != '6' 
+				&& a[7] != '7' && a[8] != '8' && a[9] != '9')
 
 		return 0;
 	else
@@ -56,17 +52,17 @@ void inmanhinh() //ve khung
 	//in ra ban co
 	cout<<endl<<endl<<endl<<endl<<endl<<endl;
 	cout <<"\t\t\t\t\t"<< "     |     |     " << endl;
-	cout <<"\t\t\t\t\t"<< "  " << a[0][0] << "  |  " << a[0][1] << "  |  " << a[0][2] << endl;
+	cout <<"\t\t\t\t\t"<< "  " << a[1] << "  |  " << a[2] << "  |  " << a[3] << endl;
 
 	cout <<"\t\t\t\t\t"<< "_____|_____|_____" << endl;
 	cout <<"\t\t\t\t\t"<< "     |     |     " << endl;
 
-	cout <<"\t\t\t\t\t"<< "  " << a[1][0] << "  |  " << a[1][1] << "  |  " << a[1][2] << endl;
+	cout <<"\t\t\t\t\t"<< "  " << a[4] << "  |  " << a[5] << "  |  " << a[6] << endl;
 
 	cout <<"\t\t\t\t\t"<< "_____|_____|_____" << endl;
 	cout <<"\t\t\t\t\t"<< "     |     |     " << endl;
 	
-	cout <<"\t\t\t\t\t"<< "  " << a[2][0] << "  |  " << a[2][1] << "  |  " << a[2][2] << endl;
+	cout <<"\t\t\t\t\t"<< "  " << a[7] << "  |  " << a[8] << "  |  " << a[9] << endl;
 
 	cout <<"\t\t\t\t\t"<< "     |     |     " << endl << endl; 
 	cout<<"Luot choi thu:"<<dem<<endl;
@@ -95,33 +91,33 @@ int main()
 			mark='X';
 		else 
 			mark='O';	
-		if (k == 1 && a[0][0] == ' ') //neu bam phim 1 thi danh vao o so 1
+		if (k == 1 && a[1] == '1') //neu bam phim 1 thi danh vao o so 1
 
-			a[0][0] = mark;
-		else if (k == 2 && a[0][1] == ' ')
+			a[1] = mark;
+		else if (k == 2 && a[2] == '2')
 
-			a[0][1] = mark;
-		else if (k == 3 && a[0][2] == ' ')
+			a[2] = mark;
+		else if (k == 3 && a[3] == '3')
 
-			a[0][2] = mark;
-		else if (k == 4 && a[1][0] == ' ')
+			a[3] = mark;
+		else if (k == 4 && a[4] == '4')
 
-			a[1][0] = mark;
-		else if (k == 5 && a[1][1] == ' ')
+			a[4] = mark;
+		else if (k == 5 && a[5] == '5')
 
-			a[1][1] = mark;
-		else if (k == 6 && a[1][2] == ' ')
+			a[5] = mark;
+		else if (k == 6 && a[6] == '6')
 
-			a[1][2] = mark;
-		else if (k == 7 && a[2][0] == ' ')
+			a[6] = mark;
+		else if (k == 7 && a[7] == '7')
 
-			a[2][0] = mark;
-		else if (k == 8 && a[2][1] == ' ')
+			a[7] = mark;
+		else if (k == 8 && a[8] == '8')
 
-			a[2][1] = mark;
-		else if (k == 9 && a[2][2] == ' ')
+			a[8] = mark;
+		else if (k == 9 && a[9] == '9')
 
-			a[2][2] = mark;
+			a[9] = mark;
 		else
 		{
 			cout<<"Khong the danh vao o da danh";
@@ -140,6 +136,3 @@ int main()
 		cout<<"Game ket thuc!"<<endl;
 	system("pause");
 }
-
-
-
